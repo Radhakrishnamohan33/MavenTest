@@ -1,4 +1,4 @@
-@Library("app-lib") _
+//@Library("app-lib") _
 pipeline {
   agent any
 
@@ -19,7 +19,8 @@ pipeline {
     }
     stage('Deploy to Tomcat') {
       steps {
-        tomcatDeploy(["172.31.13.38","172.31.13.38","172.31.13.38"],"ec2-user","tomcat-dev")
+//        tomcatDeploy(["172.31.13.38","172.31.13.38","172.31.13.38"],"ec2-user","tomcat-dev")
+        sh 'deploy to tomcat'
       }
     }
   }
