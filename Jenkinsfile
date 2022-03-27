@@ -1,4 +1,4 @@
-@Library('sharedtest') _
+@Library('sharedtest.master') _
 pipeline {
   agent any
   options {
