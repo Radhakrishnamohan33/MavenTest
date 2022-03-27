@@ -6,7 +6,7 @@ pipeline {
     maven 'maven3'
   }
   options {
-    buildDiscarder logRotator(daysToKeepStr: '10', numToKeepStr: '9')
+    buildDiscarder logRotator(daysToKeepStr: '10', numToKeepStr: '8')
   }
   parameters {
     choice choices: ['develop', 'qa', 'master'], description: 'Choose the branch to build', name: 'branchName'
