@@ -1,3 +1,4 @@
+@Library('sharedtest') _
 pipeline {
   agent any
   options {
@@ -9,6 +10,7 @@ pipeline {
   stages {
     stage('first stage') {
       steps {
+        welcome ("Prakashbabu")
         echo 'first stage'
       }
     }
