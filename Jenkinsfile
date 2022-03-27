@@ -12,7 +12,7 @@ pipeline {
       steps {
         welcome ("Prakashbabu")
         echo 'first stage'
-        echo '$Name'
+        echo '$Names'
       }
     }
   }
