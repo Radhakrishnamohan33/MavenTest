@@ -10,7 +10,7 @@ pipeline {
   stages {
     stage('first stage') {
       steps {
-        welcome ("Prakashbabu")
+        welcome ("RK")
         echo 'first stage'
         echo '$Names'
       }
